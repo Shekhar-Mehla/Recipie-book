@@ -1,0 +1,113 @@
+/* common css  */
+:root {
+  --shadow: 2px 2px 40px black;
+  --bg-color: grey;
+  --dark-text-color: white;
+  --dark-bg: black;
+}
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.container {
+  width: 80%;
+}
+/* wraaper */
+.wrapper {
+  background-color: var(--bg-color);
+}
+/* intro starts here */
+.intro {
+  background-color: rgba(0, 255, 255, 0.67);
+  padding-top: 1rem;
+  height: 2rem;
+  padding-bottom: 1rem;
+}
+/* Navigation section starts here */
+header {
+  padding: 2rem 0px 2rem 0px;
+}
+header > .container {
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* hero section starts here */
+.hero {
+  background-image: url(./aasests/hero-bg.jpg);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero .hero_container {
+  background-color: black;
+  color: wheat;
+  flex-wrap: wrap;
+  height: 120px;
+  width: 346px;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.hero .hero_container title {
+  display: block;
+}
+/* recipie section starts here */
+.recipie_section article {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.recipie_container {
+  justify-content: space-between;
+}
+.recipie_container [class^="recipie_card"] {
+  width: 90%;
+  position: relative;
+}
+.recipie_container [class^="recipie_card"] img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.recipie_container [class^="recipie_card"] .card_content {
+  text-decoration: none;
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+  color: white;
+}
+
+/* footer */
+footer {
+  height: 200px;
+  background-color: black;
+}
